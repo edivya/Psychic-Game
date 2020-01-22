@@ -16,3 +16,5 @@ Each time the user wins or loses, the game will restart without reloading the pa
 - css
 - Bootstrap
 - javascript
+
+## Screenshot
