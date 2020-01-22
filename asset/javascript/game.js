@@ -39,7 +39,7 @@ function theGame() {
         //switches still image of black box to animated gif of light bulb flashing
         document
           .getElementById("image-here")
-          .setAttribute("src", "assets/images/light-bulb.gif");
+          .setAttribute("src", "asset/images/light-bulb.gif");
 
         //setTimeout() delays a block of code for x seconds (written in milliseconds).
         //in this case it will delay the You win! alert for 3 seconds, allowing the gif animation to cycle through.
@@ -53,7 +53,7 @@ function theGame() {
         setTimeout(function() {
           document
             .getElementById("image-here")
-            .setAttribute("src", "assets/images/black-box.png");
+            .setAttribute("src", "asset/images/black-box.png");
         }, 3000);
 
         resetGame();
