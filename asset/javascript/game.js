@@ -67,3 +67,16 @@ function theGame() {
 				document.getElementById("your-guesses").innerHTML = yourGuess;
 
 				console.log("Guesses Left: " + guessesLeft); //test
+				noGuessesLeft();
+			}
+		}
+	}
+
+	function resetGame() {
+		guessesLeft = 9; //reset variable
+		yourGuess = [];  //reset array so it's empty
+		document.getElementById("guesses-left").innerHTML = guessesLeft;  //reset display on screen
+		document.getElementById("your-guesses").innerHTML = yourGuess;    //reset display on screen
+		theGame(); //restart the game with new computerChoice.
+
+	}
