@@ -55,3 +55,15 @@ function theGame() {
 				setTimeout(function(){document.getElementById("image-here").setAttribute("src", "assets/images/black-box.png");}, 3000);
 
 				resetGame();
+				//if the user guesses wrong...
+			} else {
+				guessesLeft = guessesLeft - 1;
+				
+				document.getElementById("guesses-left").innerHTML = guessesLeft; 
+				yourGuess.push(userChoice); //append user's choice to array yourGuess
+
+				console.log("Your guesses so far: " + yourGuess); //test
+
+				document.getElementById("your-guesses").innerHTML = yourGuess;
+
+				console.log("Guesses Left: " + guessesLeft); //test
