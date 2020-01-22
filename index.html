@@ -37,45 +37,61 @@
 
     <title>Light Bulb Psychic Game</title>
   </head>
+
   <body>
-    <header>
-      <div class="page-header">
-        <h1>The Psychic Game</h1>
-      </div>
-    </header>
-    <div class="container">
-      <h2>Guess what letter I'm thinking of</h2>
+    <!--Page Header, but not a nav bar-->
+    <div class="container-fluid">
       <div class="row">
-        <div class="col-md-4">
-          <img
-            src="asset/images/Nobita.jpg"
-            class="thumbnail"
-            alt="..."
-            width="250"
-            height="250"
-          />
-        </div>
-        <div class="col-md-4">
-          <ul id="space" class="list-group">
-            <li class="list-group-item" id="wins">Wins:</li>
-            <li class="list-group-item" id="lose">Losses:</li>
-            <li class="list-group-item" id="guessesLeft">Guesses Left:</li>
-            <li class="list-group-item" id="letter">Your Guesses so far:</li>
-          </ul>
-        </div>
-        <div class="col-md-2">
-          <img
-            src="asset/images/shizuka.jpg"
-            class="thumbnail"
-            alt="..."
-            width="250"
-            height="250"
-          />
+        <div class="col-lg-12 page-header">
+          <h1>
+            <span id="smaller-font"
+              ><i class="fa fa-lightbulb-o" aria-hidden="true"></i> LIGHT BULB
+              <i class="fa fa-lightbulb-o" aria-hidden="true"></i
+            ></span>
+            <br />
+            PSYCHIC GAME
+          </h1>
+
+          <h3>Make the light bulb spark with your MIND</h3>
         </div>
       </div>
     </div>
 
-    <!-- Javascript game.js -->
-    <script type="text/javascript" src="asset/javascript/game.js"></script>
+    <!--The rest of the body-->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <!--Image from http://bestanimations.com/HomeOffice/Lights/Bulbs/Bulbs.html-->
+
+          <!--black box is a still frame from the gif I saved. Still frame created with https://ezgif.com/ -->
+          <img
+            id="image-here"
+            class="img-responsive center-block"
+            src="assets/images/black-box.png"
+            alt="Light Bulb Gif"
+          />
+          <br />
+          <br />
+          <p>
+            Use your mind to guess the correct letter! <br />If you guess right,
+            the light bulb will spark!
+          </p>
+
+          <p>Wins: <span id="your-wins">0</span></p>
+          <p>Losses: <span id="your-losses">0</span></p>
+          <p>Guesses Left: <span id="guesses-left">9</span></p>
+          <p>Your Guesses So Far: <span id="your-guesses"> </span></p>
+        </div>
+      </div>
+
+      <!-- Just realized game is impossible to play on mobile. There's no keypad! -->
+    </div>
+
+    <!--Page footer-->
+    <div class="footer">
+      <p>&#169; 2019 Divya Enjamuri</p>
+    </div>
+
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
   </body>
 </html>
