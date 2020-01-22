@@ -18,3 +18,5 @@ Each time the user wins or loses, the game will restart without reloading the pa
 - javascript
 
 ## Screenshot
+
+![Light Bulb Psychic Game](https://github.com/edivya/Psychic-Game/blob/master/asset/images/Light%20Bulb%20Psychic%20Game.png)
